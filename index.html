@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jane Doe - Digital Visiting Card</title>
+
+  <!-- Meta tags for WhatsApp Preview -->
+  <meta property="og:title" content="Jane Doe - Web Developer">
+  <meta property="og:description" content="Tap to view Jane Doe's digital visiting card and save contact.">
+  <meta property="og:image" content="https://yourdomain.com/jane-thumbnail.jpg">
+  <meta property="og:url" content="https://yourdomain.com">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 360px;
+      width: 100%;
+    }
+
+    .card h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #222;
+    }
+
+    .card h2 {
+      font-size: 16px;
+      color: #666;
+      margin: 5px 0 15px;
+    }
+
+    .card p {
+      margin: 6px 0;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .card a.button {
+      display: inline-block;
+      margin: 12px 0;
+      padding: 10px 16px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .qr {
+      margin-top: 20px;
+    }
+
+    .copy-success {
+      color: green;
+      margin-top: 8px;
+      display: none;
+      font-size: 13px;
+    }
+
+    .contact-links {
+      margin-top: 20px;
+    }
+
+    .contact-links a {
+      display: block;
+      margin: 6px auto;
+      color: #007bff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <h1>Jane Doe</h1>
+  <h2>Web Developer</h2>
+  <p>📧 jane@example.com</p>
+  <p>📞 +1 (123) 456-7890</p>
+  <p>🌐 www.janedoe.dev</p>
+
+  <!-- WhatsApp Share Button -->
+  <a
+    href="https://wa.me/?text=Hi%2C%20this%20is%20Jane%20Doe%2C%20Web%20Developer.%0AEmail%3A%20jane%40example.com%0APhone%3A%20%2B1%20(123)%20456-7890%0AWebsite%3A%20www.janedoe.dev"
+    target="_blank"
+    class="button"
+  >📤 Share via WhatsApp</a>
+
+  <!-- Download vCard -->
+  <div class="contact-links">
+    <a href="jane-doe.vcf" download>💾 Save Contact (.vcf)</a>
+  </div>
+
+  <!-- QR Code for card URL -->
+  <div class="qr">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://yourdomain.com&size=150x150" alt="QR Code">
+    <p style="font-size: 13px;">Scan to open card</p>
+  </div>
+</div>
+
+</body>
+</html>

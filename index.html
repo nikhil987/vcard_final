@@ -82,23 +82,32 @@
       text-decoration: none;
       font-size: 14px;
     }
+    .profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
   </style>
 </head>
 <body>
 
 <div class="card">
-  <h1>Jane Doe</h1>
-  <h2>Web Developer</h2>
-  <p>📧 jane@example.com</p>
-  <p>📞 +1 (123) 456-7890</p>
-  <p>🌐 www.janedoe.dev</p>
+  <img src="img/profile.jpg" alt="Nikhil Pandey" class="profile-img">  
+  <h1>Nikhil Pandey</h1>
+  <h2>Software Engineer</h2>
+  <p>📧 nikhilpandey759@gmail.com</p>
+  <p>📞 +91 8850708513</p>
+  <p>🌐 https://68848281cc6fb25c861cc57c--vcardsn.netlify.app/</p>
 
   <!-- WhatsApp Share Button -->
   <a
-    href="https://wa.me/?text=Hi%2C%20this%20is%20Jane%20Doe%2C%20Web%20Developer.%0AEmail%3A%20jane%40example.com%0APhone%3A%20%2B1%20(123)%20456-7890%0AWebsite%3A%20www.janedoe.dev"
-    target="_blank"
-    class="button"
-  >📤 Share via WhatsApp</a>
+  href="https://wa.me/?text=Hi%2C%20this%20is%20Nikhil%20Pandey%2C%20Software%20Engineer.%0AEmail%3A%20nikhilpandey759%40gmail.com%0APhone%3A%20%2B91%208850708513%0AWebsite%3A%20https%3A%2F%2F68848281cc6fb25c861cc57c--vcardsn.netlify.app%2F"
+  target="_blank"
+  class="button"
+>📤 Share via WhatsApp</a>
 
   <!-- Download vCard -->
   <div class="contact-links">
@@ -107,7 +116,7 @@
 
   <!-- QR Code for card URL -->
   <div class="qr">
-    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://yourdomain.com&size=150x150" alt="QR Code">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://68848281cc6fb25c861cc57c--vcardsn.netlify.app/&size=150x150" alt="QR Code">
     <p style="font-size: 13px;">Scan to open card</p>
   </div>
 </div>
